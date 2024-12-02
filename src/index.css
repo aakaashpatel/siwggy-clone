@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.blackOverlay{
+    background-color: rgba(136, 132, 132, 0.37);
+    height: 100vh;
+}
