@@ -11,15 +11,19 @@ const Header = () => {
   };
 
   return (
-    <>
-      {/* Black Overlay */}
-      <div
-        className="blackOverlay"
-        style={{
-          opacity: toggle ? 0 : 1,
-          visibility: toggle ? "visible" : "hidden",
-        }}
+    <> 
+    {/* Black Overlay */}
+    <div
+      className="blackOverlay duration-500"
+      style={{
+        opacity: toggle ? 1 : 0,
+        visibility: toggle ? "visible" : "hidden",
+      }}
+    >
+      <div className="w-[500px] bg-white h-full absolute duration-[600ms]"
+      style={{left : toggle ? "0%" : "-100%"}}
       ></div>
+    </div>
 
       {/* Header */}
       <div className="p-1 shadow-xl">
