@@ -24,11 +24,11 @@ const Category = () => {
       <div className="flex gap-3">
         {category.map((item) => {
           return (
-            <div key={item.id} className="w-[2200px]">
+            <div key={item.id} className="">
               <img
                 src={item.image}
                 alt={item.path || "Category"}
-                className="w-full object-cover"
+                className="imageSection"
               />
               <p className="text-center mt-2">{item.name}</p>
             </div>
